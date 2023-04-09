@@ -22,6 +22,8 @@ res = openai.ChatCompletion.create(
             "content":"こんにちは。",
         },
     ],
+    max_tokens = 300,
+    temperature = 1,
 )
 
 print(res)
