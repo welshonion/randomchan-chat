@@ -31,9 +31,9 @@ namespace ChatGPTAPITest
         public async UniTask<ChatGPTResponseModel> RequestAsync()
         {
             string datapath;
-            datapath = Resources.Load("Config_OpenAI").ToString();
-            Debug.Log(datapath);
-            Debug.Log(File.Exists(datapath));
+            datapath = Resources.Load("OpenAIConfig").ToString();
+            ///Debug.Log(datapath);
+            ///Debug.Log(File.Exists(datapath));
             OpenAiAPI OPENAI_API = JsonUtility.FromJson<OpenAiAPI>(datapath);
 
             Debug.Log(OPENAI_API.apiKey);
@@ -65,7 +65,7 @@ namespace ChatGPTAPITest
                 ///{"X-Slack-No-Retry", "1"}
             };
 
-            Debug.Log(messagelist);
+            ///Debug.Log(messagelist);
             ///Debug.Log(messagelist[0]);
             ///Debug.Log(messagelist[0].role);
             ///Debug.Log(messagelist[0].content);
@@ -167,7 +167,7 @@ public class ApiTest : MonoBehaviour
     void Start()
     {
         ///RequestAsync("Ç±ÇÒÇ…ÇøÇÕÅB");
-        Debug.Log("init");
+        ///Debug.Log("init");
 
     }
 

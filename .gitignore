@@ -60,4 +60,4 @@ crashlytics-build.properties
 
 /ignored
 __pycache__
-/randomchan-chat/Assets/Resources/Config_OpenAI.json
+/randomchan-chat/Assets/Resources/OpenAIConfig.json
